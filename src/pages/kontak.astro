@@ -1,0 +1,159 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Kontak — CAVA PERFUME";
+const description = "Contact CAVA PERFUME for questions, collaborations, or fragrance discovery. hello@cavaperfume.com";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CAVA PERFUME",
+  "description": "Contact CAVA PERFUME for questions, collaborations, or fragrance discovery. hello@cavaperfume.com",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CAVA PERFUME",
+    "url": "https://id-preview--0b81df86-aa7b-4188-920d-4464189dc207.lovable.app"
+  }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage="/images/cava-editorial-02.jpg"
+  ogType="website"
+  preload="/images/cava-editorial-02.jpg"
+  jsonLd={jsonLd}
+>
+<div class="cursor" aria-hidden="true">VIEW</div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+  <nav aria-label="Navigasi utama">
+    <ul class="nav-links">
+      <li><a href="/">Beranda</a></li>
+      <li class="nav-shop"><a href="/online-shop">Online Shop</a></li>
+      <li><a href="/varian-aroma">Varian Aroma</a></li>
+      <li><a href="/katalog">Katalog</a></li>
+      <li><a href="/kontak" aria-current="page">Kontak</a></li>
+    </ul>
+  </nav>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu">
+  <ol>
+    <li><a href="/">Beranda</a></li>
+    <li><a href="/online-shop">Online Shop</a></li>
+    <li><a href="/varian-aroma">Varian Aroma</a></li>
+    <li><a href="/katalog">Katalog</a></li>
+    <li><a href="/kontak">Kontak</a></li>
+  </ol>
+  <div class="menu-foot">hello@cavaperfume.com</div>
+</div>
+
+<main id="main" tabindex="-1"><section class="page-hero">
+  <img decoding="async" loading="eager" class="bg" src="/images/cava-editorial-02.jpg" alt="" data-par="-40" fetchpriority="high">
+  <div class="inner">
+    <p class="eyebrow">Kontak</p>
+    <h1 class="disp mask in" style="margin-top:1.5rem"><span>Let's</span></h1>
+    <h1 class="disp mask in"><span>Connect.</span></h1>
+    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Have a question, collaboration idea, or simply want to discover CAVA? We would love to hear from you.</p>
+  </div>
+</section>
+
+<section class="section wrap">
+  <div class="grid" style="grid-template-columns:1fr 1.2fr">
+    <div class="reveal">
+      <h2 class="disp-sm">CAVA<br>Perfume</h2>
+      <p class="lede" style="margin-top:2rem"><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></p>
+      <hr class="rule" style="margin:2.5rem 0">
+      <ul style="list-style:none;padding:0;margin:0;font-size:13px;line-height:2.4">
+        <li><a class="btn btn-ghost" href="#">Instagram <span class="arw">&rarr;</span></a></li>
+        <li><a class="btn btn-ghost" href="#">TikTok <span class="arw">&rarr;</span></a></li>
+        <li><a class="btn btn-ghost" href="#">WhatsApp <span class="arw">&rarr;</span></a></li>
+      </ul>
+    </div>
+    <form class="reveal" id="contactForm" novalidate>
+      <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" type="text" required></div>
+      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
+      <div class="field"><label for="subjek">Subjek</label><input id="subjek" name="subjek" type="text"></div>
+      <div class="field"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" required></textarea></div>
+      <button class="btn btn-dark" type="submit">Send message <span class="arw">&rarr;</span></button>
+      <p class="meta" id="formNote" role="status" style="margin-top:1.5rem"></p>
+    </form>
+  </div>
+</section>
+
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+      <p class="lede" style="margin-top:1.5rem">Modern fragrance.<br>Timeless presence.</p>
+    </div>
+    <div><h4>Navigasi</h4><ul><li><a href="/">Beranda</a></li><li><a href="/varian-aroma">Varian Aroma</a></li><li><a href="/katalog">Katalog</a></li><li><a href="/kontak">Kontak</a></li></ul></div>
+    <div><h4>Social</h4><ul><li><a href="#" aria-label="CAVA PERFUME di Instagram">Instagram</a></li><li><a href="#" aria-label="CAVA PERFUME di TikTok">TikTok</a></li><li><a href="#" aria-label="Hubungi CAVA PERFUME via WhatsApp">WhatsApp</a></li></ul></div>
+    <div><h4>Kontak</h4><ul><li><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 CAVA PERFUME. All rights reserved.</span><span>Scent of character</span></div>
+</footer>
+
+<script is:inline>
+/* respects prefers-reduced-motion: skips parallax + heavy effects */
+
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+const burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{
+  const open=document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Tutup menu':'Buka menu');
+});
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('menu-open')});
+
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
+  const el=e.target;const d=el.dataset.delay||0;setTimeout(()=>el.classList.add('in'),d);io.unobserve(el);}})},{threshold:.16});
+document.querySelectorAll('.reveal,.mask,.img-reveal').forEach(el=>io.observe(el));
+
+// parallax
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const px=reduce?[]:[...document.querySelectorAll('[data-par]')];
+let ticking=false;
+function par(){px.forEach(el=>{const r=el.getBoundingClientRect();
+  const p=(r.top+r.height/2-innerHeight/2)/innerHeight;
+  el.style.transform='translate3d(0,'+(p*parseFloat(el.dataset.par)).toFixed(2)+'px,0)';});ticking=false;}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(par)}},{passive:true});par();
+
+// smooth scroll (lightweight lerp)
+if(matchMedia('(min-width:821px)').matches && !matchMedia('(prefers-reduced-motion:reduce)').matches){
+  let target=scrollY,cur=scrollY,run=false;
+  addEventListener('wheel',e=>{
+    if(document.body.classList.contains('menu-open')||document.querySelector('.modal.open'))return;
+    e.preventDefault();
+    target=Math.max(0,Math.min(document.body.scrollHeight-innerHeight,target+e.deltaY));
+    if(!run){run=true;requestAnimationFrame(loop)}
+  },{passive:false});
+  function loop(){cur+=(target-cur)*.09;if(Math.abs(target-cur)<.5){cur=target;run=false}
+    scrollTo(0,cur);if(run)requestAnimationFrame(loop)}
+  addEventListener('scrollend',()=>{if(!run){target=cur=scrollY}});
+}
+
+// custom cursor
+const cur=document.querySelector('.cursor');
+if(cur&&matchMedia('(hover:hover)').matches){
+  addEventListener('mousemove',e=>{cur.style.left=e.clientX+'px';cur.style.top=e.clientY+'px'});
+  document.querySelectorAll('[data-cursor]').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{cur.textContent=el.dataset.cursor;cur.classList.add('show')});
+    el.addEventListener('mouseleave',()=>cur.classList.remove('show'));
+  });
+}
+
+const form=document.getElementById('contactForm');
+form.addEventListener('submit',e=>{e.preventDefault();
+  const note=document.getElementById('formNote');
+  if(!form.nama.value.trim()||!form.email.value.trim()||!form.pesan.value.trim()){
+    note.textContent='Mohon lengkapi nama, email, dan pesan.';return;}
+  note.textContent='Terima kasih. Pesan Anda telah kami terima.';form.reset();});
+</script>
+</BaseLayout>

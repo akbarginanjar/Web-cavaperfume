@@ -1,0 +1,204 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "Varian Aroma — CAVA PERFUME";
+const description = "Explore the character behind every CAVA fragrance: fresh, floral, woody, oriental and musk families.";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "CAVA PERFUME",
+  "description": "Explore the character behind every CAVA fragrance: fresh, floral, woody, oriental and musk families.",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "CAVA PERFUME",
+    "url": "https://cavaperfume.com"
+  }
+};
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage="/images/cava-editorial-03.jpg"
+  ogType="article"
+  preload="/images/cava-editorial-03.jpg"
+  jsonLd={jsonLd}
+>
+<div class="cursor" aria-hidden="true">VIEW</div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+  <nav aria-label="Navigasi utama">
+    <ul class="nav-links">
+      <li><a href="/">Beranda</a></li>
+      <li class="nav-shop"><a href="/online-shop">Online Shop</a></li>
+      <li><a href="/varian-aroma" aria-current="page">Varian Aroma</a></li>
+      <li><a href="/katalog">Katalog</a></li>
+      <li><a href="/kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu">
+  <ol>
+    <li><a href="/">Beranda</a></li>
+    <li><a href="/online-shop">Online Shop</a></li>
+    <li><a href="/varian-aroma">Varian Aroma</a></li>
+    <li><a href="/katalog">Katalog</a></li>
+    <li><a href="/kontak">Kontak</a></li>
+  </ol>
+  <div class="menu-foot">hello@cavaperfume.com</div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<section class="page-hero">
+  <img decoding="async" loading="eager" class="bg" src="/images/cava-editorial-03.jpg" alt="" fetchpriority="high">
+  <div class="inner">
+    <p class="eyebrow">Varian aroma</p>
+    <h1 class="disp mask in" style="margin-top:1.5rem"><span>The</span></h1>
+    <h1 class="disp mask in"><span>Scents</span></h1>
+    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Explore the character behind every CAVA fragrance.</p>
+  </div>
+</section>
+
+<section class="section wrap">
+
+  <article class="editorial editorial-variant-left" style="margin-bottom:clamp(4rem,10vw,9rem)">
+    <div class="figure img-reveal editorial-img" data-cursor="VIEW">
+      <img decoding="async" src="/images/cava-editorial-01.jpg" alt="Aroma Fresh CAVA" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">01</p>
+      <h2 class="disp-sm" style="margin:1rem 0">Fresh</h2>
+      <p class="eyebrow">Citrus / Aquatic / Clean</p>
+      <p class="lede" style="margin-top:1.5rem">For moments that feel effortless.</p>
+      <hr class="rule" style="margin:1.75rem 0">
+      <p class="meta" style="margin:0">Notes &nbsp;/&nbsp; Bergamot, sea salt, lemon zest</p>
+    </div>
+  </article>
+
+  <article class="editorial editorial-variant-right" style="margin-bottom:clamp(4rem,10vw,9rem)">
+    <div class="figure img-reveal editorial-img" data-cursor="VIEW">
+      <img decoding="async" src="/images/cava-editorial-02.jpg" alt="Aroma Floral CAVA" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">02</p>
+      <h2 class="disp-sm" style="margin:1rem 0">Floral</h2>
+      <p class="eyebrow">Iris / Jasmine / Peony</p>
+      <p class="lede" style="margin-top:1.5rem">Soft petals with a quiet elegance.</p>
+      <hr class="rule" style="margin:1.75rem 0">
+      <p class="meta" style="margin:0">Notes &nbsp;/&nbsp; Tuberose, peony, orris</p>
+    </div>
+  </article>
+
+  <article class="editorial editorial-variant-left" style="margin-bottom:clamp(4rem,10vw,9rem)">
+    <div class="figure img-reveal editorial-img" data-cursor="VIEW">
+      <img decoding="async" src="/media/cava-duo.jpg" alt="Aroma Woody CAVA" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">03</p>
+      <h2 class="disp-sm" style="margin:1rem 0">Woody</h2>
+      <p class="eyebrow">Cedar / Vetiver / Oud</p>
+      <p class="lede" style="margin-top:1.5rem">Grounded warmth for a lasting presence.</p>
+      <hr class="rule" style="margin:1.75rem 0">
+      <p class="meta" style="margin:0">Notes &nbsp;/&nbsp; Cedarwood, vetiver, dry oud</p>
+    </div>
+  </article>
+
+  <article class="editorial editorial-variant-right" style="margin-bottom:clamp(4rem,10vw,9rem)">
+    <div class="figure img-reveal editorial-img" data-cursor="VIEW">
+      <img decoding="async" src="/media/cava-jungle.jpg" alt="Aroma Oriental CAVA" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">04</p>
+      <h2 class="disp-sm" style="margin:1rem 0">Oriental</h2>
+      <p class="eyebrow">Amber / Spice / Resin</p>
+      <p class="lede" style="margin-top:1.5rem">Depth, warmth, and slow-burning intensity.</p>
+      <hr class="rule" style="margin:1.75rem 0">
+      <p class="meta" style="margin:0">Notes &nbsp;/&nbsp; Cardamom, amber, benzoin</p>
+    </div>
+  </article>
+
+  <article class="editorial editorial-variant-left" style="margin-bottom:clamp(4rem,10vw,9rem)">
+    <div class="figure img-reveal editorial-img" data-cursor="VIEW">
+      <img decoding="async" src="/images/cava-editorial-03.jpg" alt="Aroma Musk CAVA" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">05</p>
+      <h2 class="disp-sm" style="margin:1rem 0">Musk</h2>
+      <p class="eyebrow">Skin / Powder / Soft</p>
+      <p class="lede" style="margin-top:1.5rem">Intimate, clean, and almost invisible.</p>
+      <hr class="rule" style="margin:1.75rem 0">
+      <p class="meta" style="margin:0">Notes &nbsp;/&nbsp; White musk, almond, amberwood</p>
+    </div>
+  </article>
+
+</section>
+
+<section class="section dark wrap" style="text-align:center">
+  <h2 class="disp-sm"><span class="mask"><span>Every note</span></span><span class="mask"><span>tells a story.</span></span></h2>
+  <div style="margin-top:3rem;display:flex;gap:1.5rem 2rem;justify-content:center;flex-wrap:wrap"><a class="btn btn-light" href="/katalog">Explore collection <span class="arw">&rarr;</span></a><a class="btn btn-light" href="/katalog#scent-finder">Find your scent <span class="arw">&rarr;</span></a></div>
+</section>
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+      <p class="lede" style="margin-top:1.5rem">Modern fragrance.<br>Timeless presence.</p>
+    </div>
+    <div><h4>Navigasi</h4><ul><li><a href="/">Beranda</a></li><li><a href="/varian-aroma">Varian Aroma</a></li><li><a href="/katalog">Katalog</a></li><li><a href="/kontak">Kontak</a></li></ul></div>
+    <div><h4>Social</h4><ul><li><a href="#" aria-label="CAVA PERFUME di Instagram">Instagram</a></li><li><a href="#" aria-label="CAVA PERFUME di TikTok">TikTok</a></li><li><a href="#" aria-label="Hubungi CAVA PERFUME via WhatsApp">WhatsApp</a></li></ul></div>
+    <div><h4>Kontak</h4><ul><li><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 CAVA PERFUME. All rights reserved.</span><span>Scent of character</span></div>
+</footer>
+
+<script is:inline>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+const burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{
+  const open=document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Tutup menu':'Buka menu');
+});
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('menu-open')});
+
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
+  const el=e.target;const d=el.dataset.delay||0;setTimeout(()=>el.classList.add('in'),d);io.unobserve(el);}})},{threshold:.16});
+document.querySelectorAll('.reveal,.mask,.img-reveal').forEach(el=>io.observe(el));
+
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const px=reduce?[]:[...document.querySelectorAll('[data-par]')];
+let ticking=false;
+function par(){px.forEach(el=>{const r=el.getBoundingClientRect();
+  const p=(r.top+r.height/2-innerHeight/2)/innerHeight;
+  el.style.transform='translate3d(0,'+(p*parseFloat(el.dataset.par)).toFixed(2)+'px,0)';});ticking=false;}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(par)}},{passive:true});par();
+
+if(matchMedia('(min-width:821px)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  let target=scrollY,cur=scrollY,run=false;
+  addEventListener('wheel',e=>{
+    if(document.body.classList.contains('menu-open')||document.querySelector('.modal.open'))return;
+    e.preventDefault();
+    target=Math.max(0,Math.min(document.body.scrollHeight-innerHeight,target+e.deltaY));
+    if(!run){run=true;requestAnimationFrame(loop)}
+  },{passive:false});
+  function loop(){cur+=(target-cur)*.09;if(Math.abs(target-cur)<.5){cur=target;run=false}
+    scrollTo(0,cur);if(run)requestAnimationFrame(loop)}
+  addEventListener('scrollend',()=>{if(!run){target=cur=scrollY}});
+}
+
+const curEl=document.querySelector('.cursor');
+if(curEl&&matchMedia('(hover:hover)').matches){
+  addEventListener('mousemove',e=>{curEl.style.left=e.clientX+'px';curEl.style.top=e.clientY+'px'});
+  document.querySelectorAll('[data-cursor]').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{curEl.textContent=el.dataset.cursor;curEl.classList.add('show')});
+    el.addEventListener('mouseleave',()=>curEl.classList.remove('show'));
+  });
+}
+</script>
+</BaseLayout>

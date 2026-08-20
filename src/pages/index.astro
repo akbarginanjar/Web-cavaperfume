@@ -1,0 +1,368 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const title = "CAVA PERFUME — Scent of Character";
+const description = "CAVA PERFUME menghadirkan aroma modern yang elegan, khas, dan mudah diingat untuk menambah kehadiran Anda setiap hari.";
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "CAVA PERFUME",
+  "description": "CAVA PERFUME menghadirkan aroma modern yang elegan, khas, dan mudah diingat.",
+  "slogan": "Scent of Character",
+  "sameAs": [],
+  "brand": { "@type": "Brand", "name": "CAVA PERFUME" }
+};
+
+const testimonials = [
+  { quote: "Parfumnya tahan lama banget, dari pagi sampai malam masih tercium. CAVA NO.01 jadi andalan daily wear saya sekarang.", author: "Rizky A. — Jakarta", stars: 5 },
+  { quote: "Aroma woody-nya sophisticated banget. Banyak yang tanya saya pakai parfum apa waktu meeting. Langsung recommend CAVA.", author: "Dinda P. — Surabaya", stars: 5 },
+  { quote: "Suka banget sama packaging-nya, minimalis dan elegan. Tapi yang bikin repeat order tentu aromanya yang nggak pasaran.", author: "Fajar M. — Bandung", stars: 5 },
+  { quote: "CAVA NO.02 cocok banget buat casual everyday. Fresh tapi tetap ada depth-nya. Harga sangat worth it untuk kualitas segini.", author: "Sella R. — Yogyakarta", stars: 5 },
+  { quote: "Udah coba beberapa parfum lokal, tapi CAVA yang paling nempel di hati. Sillage-nya bagus dan longevity-nya luar biasa.", author: "Bima K. — Medan", stars: 5 },
+];
+---
+
+<BaseLayout
+  title={title}
+  description={description}
+  ogImage="/media/cava-jungle.jpg"
+  ogType="website"
+  preload="/media/cava-jungle.jpg"
+  jsonLd={jsonLd}
+>
+<div class="cursor" aria-hidden="true">VIEW</div>
+
+<header class="nav" id="nav">
+  <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+  <nav aria-label="Navigasi utama">
+    <ul class="nav-links">
+      <li><a href="/" aria-current="page">Beranda</a></li>
+      <li class="nav-shop"><a href="/online-shop">Online Shop</a></li>
+      <li><a href="/varian-aroma">Varian Aroma</a></li>
+      <li><a href="/katalog">Katalog</a></li>
+      <li><a href="/kontak">Kontak</a></li>
+    </ul>
+  </nav>
+  <button class="burger" id="burger" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+</header>
+<div class="mobile-menu" id="mobileMenu" role="dialog" aria-label="Menu">
+  <ol>
+    <li><a href="/">Beranda</a></li>
+    <li><a href="/online-shop">Online Shop</a></li>
+    <li><a href="/varian-aroma">Varian Aroma</a></li>
+    <li><a href="/katalog">Katalog</a></li>
+    <li><a href="/kontak">Kontak</a></li>
+  </ol>
+  <div class="menu-foot">hello@cavaperfume.com</div>
+</div>
+
+<main id="main" tabindex="-1">
+
+<!-- HERO -->
+<section class="hero">
+  <video autoplay muted loop playsinline preload="metadata" poster="/media/cava-jungle.jpg" aria-hidden="true">
+    <source src="/media/cava-hero.mp4" type="video/mp4">
+  </video>
+  <div class="grain"></div>
+  <div class="hero-inner">
+    <p class="eyebrow mask in"><span>CAVA Perfume</span></p>
+    <h1 class="mask in" style="margin-top:1.5rem"><span>Scent of</span></h1>
+    <h1 class="mask in"><span>Character</span></h1>
+    <p class="lede reveal in" style="margin-top:2rem;color:rgba(255,255,255,.75)">Temukan parfum yang siap menemani kepribadian dan kehadiran Anda setiap hari.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="/katalog">Jelajahi Parfum <span class="arw">&rarr;</span></a>
+      <a class="btn btn-ghost" href="/online-shop">Temukan CAVA <span class="arw">&rarr;</span></a>
+    </div>
+  </div>
+  <div class="scroll-ind">SCROLL<i></i></div>
+</section>
+
+<!-- PERKENALAN -->
+<section class="section wrap" aria-labelledby="intro">
+  <div class="editorial editorial-intro">
+    <div class="editorial-text">
+      <h2 id="intro" class="disp"><span class="mask"><span>Aroma</span></span><span class="mask"><span>yang berbicara</span></span><span class="mask"><span>tanpa kata.</span></span></h2>
+      <p class="lede reveal" style="margin-top:2.5rem">CAVA PERFUME hadir untuk mereka yang ingin meninggalkan kesan hangat, elegan, dan tak terlupakan hanya dengan satu sentuhan wangi.</p>
+    </div>
+    <div class="figure img-reveal editorial-img-1" data-cursor="VIEW">
+      <img decoding="async" src="/images/cava-editorial-01.jpg" alt="Botol parfum CAVA di atas alas beton" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- KISAH BRAND -->
+<section class="section dark" aria-labelledby="story">
+  <div class="wrap">
+    <div class="editorial editorial-story">
+      <div class="figure img-reveal editorial-img-1" data-cursor="VIEW">
+        <img decoding="async" src="/media/cava-duo.jpg" alt="Dua botol parfum CAVA di podium minimalis" loading="lazy">
+      </div>
+      <div class="reveal editorial-text">
+        <h2 id="story" class="disp-sm">Seni<br>menyapa</h2>
+        <p class="lede" style="margin-top:2rem">Setiap aroma menyimpan cerita. CAVA mengubah momen, kenangan, dan emosi menjadi wangi yang khas dan tak terlupakan.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BEST SELLER -->
+<section class="section wrap" aria-labelledby="bestseller">
+  <p class="eyebrow reveal">Best Seller</p>
+  <h2 id="bestseller" class="disp-sm reveal" style="margin:1.5rem 0 3rem">Pilihan Terfavorit</h2>
+  <div class="cards cards-4">
+
+    <article class="card reveal" data-delay="0" data-cursor="VIEW" tabindex="0" role="button"
+      data-name="CAVA NO.01" data-desc="Bergamot, iris, dan amber dalam komposisi yang tenang namun berkarakter."
+      data-top="Bergamot|Pink Pepper" data-heart="Iris|Jasmine" data-base="Amber|Cedarwood|Musk" data-img="/images/cava-bottle-01.jpg">
+      <div class="ph"><img decoding="async" src="/images/cava-bottle-01.jpg" alt="CAVA NO.01" loading="lazy"></div>
+      <div class="card-body">
+        <h3>NO.01</h3>
+        <p class="meta">Woody Floral</p>
+        <p class="lede">Tenang namun berkarakter.</p>
+      </div>
+    </article>
+
+    <article class="card reveal" data-delay="60" data-cursor="VIEW" tabindex="0" role="button"
+      data-name="CAVA NO.02" data-desc="Kesegaran aquatic yang bersih dengan jejak kayu yang hangat."
+      data-top="Sea Salt|Lemon" data-heart="Neroli|Violet" data-base="Vetiver|White Musk" data-img="/images/cava-editorial-01.jpg">
+      <div class="ph"><img decoding="async" src="/images/cava-editorial-01.jpg" alt="CAVA NO.02" loading="lazy"></div>
+      <div class="card-body">
+        <h3>NO.02</h3>
+        <p class="meta">Aquatic Fresh</p>
+        <p class="lede">Segar dan bersih sepanjang hari.</p>
+      </div>
+    </article>
+
+    <article class="card reveal" data-delay="120" data-cursor="VIEW" tabindex="0" role="button"
+      data-name="CAVA NO.03" data-desc="Oriental lembut dengan vanila, tonka, dan resin yang dalam."
+      data-top="Cardamom|Mandarin" data-heart="Rose|Saffron" data-base="Vanilla|Tonka|Benzoin" data-img="/media/cava-duo.jpg">
+      <div class="ph"><img decoding="async" src="/media/cava-duo.jpg" alt="CAVA NO.03" loading="lazy"></div>
+      <div class="card-body">
+        <h3>NO.03</h3>
+        <p class="meta">Oriental Warm</p>
+        <p class="lede">Hangat dan penuh kedalaman.</p>
+      </div>
+    </article>
+
+    <article class="card reveal" data-delay="180" data-cursor="VIEW" tabindex="0" role="button"
+      data-name="CAVA NO.04" data-desc="Perpaduan bunga putih dengan musk lembut yang feminin dan modern."
+      data-top="Tuberose|White Peony" data-heart="Jasmine|Iris" data-base="White Musk|Sandalwood" data-img="/images/cava-editorial-02.jpg">
+      <div class="ph"><img decoding="async" src="/images/cava-editorial-02.jpg" alt="CAVA NO.04" loading="lazy"></div>
+      <div class="card-body">
+        <h3>NO.04</h3>
+        <p class="meta">White Floral</p>
+        <p class="lede">Feminin, modern, tak terlupakan.</p>
+      </div>
+    </article>
+
+  </div>
+  <div style="margin-top:3rem;text-align:center">
+    <a class="btn btn-dark" href="/katalog">Lihat Katalog Lengkap <span class="arw">&rarr;</span></a>
+  </div>
+</section>
+
+<!-- AROMA UNGGULAN -->
+<section class="section wrap" aria-labelledby="featured">
+  <div class="editorial editorial-featured">
+    <div class="figure img-reveal editorial-img-1" data-cursor="VIEW">
+      <img decoding="async" src="/images/cava-bottle-01.jpg" alt="CAVA NO.01 eau de parfum" style="object-fit:contain;padding:10%" loading="lazy">
+    </div>
+    <div class="reveal editorial-text">
+      <p class="eyebrow">Eau de Parfum / 50 ML</p>
+      <h2 id="featured" class="disp-sm" style="margin-top:1rem">CAVA<br>No.01</h2>
+      <p class="lede" style="margin-top:2rem">Komposisi yang halus, hangat, dan berkarakter untuk hadir dengan percaya diri.</p>
+      <a class="btn btn-ghost" href="/katalog" style="margin-top:2.5rem">Temukan aromanya <span class="arw">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- CATATAN AROMA -->
+<section class="section dark wrap" aria-labelledby="notes">
+  <h2 id="notes" class="disp-sm reveal" style="margin-bottom:4rem">Komposisi</h2>
+  <div class="notes">
+    <div class="note reveal"><p class="eyebrow">Catatan atas</p><ul><li>Bergamot</li><li>Pink Pepper</li></ul></div>
+    <div class="note reveal" data-delay="140"><p class="eyebrow">Catatan tengah</p><ul><li>Iris</li><li>Jasmine</li></ul></div>
+    <div class="note reveal" data-delay="280"><p class="eyebrow">Catatan dasar</p><ul><li>Amber</li><li>Cedarwood</li><li>Musk</li></ul></div>
+  </div>
+</section>
+
+<!-- TESTIMONI -->
+<section class="section wrap" aria-labelledby="testi-title">
+  <p class="eyebrow reveal" style="text-align:center">Testimoni</p>
+  <h2 id="testi-title" class="disp-sm reveal" style="margin:1.5rem 0 3rem;text-align:center">Apa kata mereka</h2>
+  <div class="testi-wrap" id="testiWrap">
+    <div class="testi-track" id="testiTrack">
+      {testimonials.map((t) => (
+        <div class="testi-slide">
+          <div class="testi-stars">{"★".repeat(t.stars)}</div>
+          <blockquote class="testi-quote">"{t.quote}"</blockquote>
+          <p class="testi-author">{t.author}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+  <div class="testi-controls">
+    <button class="testi-btn" id="testPrev" aria-label="Testimoni sebelumnya">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M10 12L6 8l4-4"/></svg>
+    </button>
+    <div class="testi-dots" id="testiDots">
+      {testimonials.map((_, i) => (
+        <button class={`testi-dot${i === 0 ? " active" : ""}`} aria-label={`Testimoni ${i + 1}`} data-idx={i}></button>
+      ))}
+    </div>
+    <button class="testi-btn" id="testiNext" aria-label="Testimoni berikutnya">
+      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4l4 4-4 4"/></svg>
+    </button>
+  </div>
+</section>
+
+<!-- BRAND STATEMENT -->
+<section class="section dark" style="text-align:center" aria-label="Brand statement">
+  <div class="wrap">
+    <h2 class="disp"><span class="mask"><span>Parfum bukan</span></span><span class="mask"><span>sekadar aroma.</span></span></h2>
+    <h2 class="disp" style="color:var(--gray);margin-top:3rem"><span class="mask"><span>Ia adalah</span></span><span class="mask"><span>kehadiran.</span></span></h2>
+  </div>
+</section>
+
+<!-- CTA HERO -->
+<section class="hero" style="height:80svh;min-height:520px" aria-labelledby="cta">
+  <img decoding="async" loading="eager" class="hero-img" src="/images/cava-editorial-03.jpg" alt="" fetchpriority="high">
+  <div class="hero-inner">
+    <h2 id="cta" class="disp-sm"><span class="mask"><span>Temukan</span></span><span class="mask"><span>aroma khas Anda.</span></span></h2>
+    <p class="lede reveal" style="margin-top:2rem;color:rgba(255,255,255,.75)">Jelajahi lebih lanjut koleksi CAVA yang dibuat untuk karakter Anda.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="/katalog">Jelajahi Parfum <span class="arw">&rarr;</span></a>
+      <a class="btn btn-ghost" href="/online-shop">Beli Sekarang <span class="arw">&rarr;</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detail produk">
+  <button class="modal-close" id="modalClose" aria-label="Tutup detail">CLOSE &times;</button>
+  <div class="modal-inner">
+    <img decoding="async" loading="lazy" id="mImg" src="/images/cava-bottle-01.jpg" alt="">
+    <div class="modal-content">
+      <p class="eyebrow" id="mEyebrow">Eau de Parfum</p>
+      <h2 class="disp-sm" id="mName" style="margin:1rem 0 1.25rem">CAVA NO.01</h2>
+      <p class="lede" id="mDesc"></p>
+      <hr class="rule" style="margin:2.5rem 0">
+      <div class="grid" style="grid-template-columns:1fr 1fr;gap:2rem">
+        <div><p class="eyebrow">Catatan atas</p><p id="mTop" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Catatan tengah</p><p id="mHeart" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Catatan dasar</p><p id="mBase" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Volume</p><p style="font-family:var(--serif);font-size:1.4rem">50 ML</p></div>
+      </div>
+      <div style="margin-top:2.5rem">
+        <a class="btn btn-dark" href="/online-shop">Beli Sekarang <span class="arw">&rarr;</span></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+</main>
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <a class="logo" href="/" aria-label="CAVA Perfume beranda">CAVA<small>Parfums | Luxury Fragrances</small></a>
+      <p class="lede" style="margin-top:1.5rem">Aroma modern.<br>Kehadiran abadi.</p>
+    </div>
+    <div><h4>Navigasi</h4><ul><li><a href="/">Beranda</a></li><li><a href="/varian-aroma">Varian Aroma</a></li><li><a href="/katalog">Katalog</a></li><li><a href="/kontak">Kontak</a></li></ul></div>
+    <div><h4>Beli</h4><ul><li><a href="/online-shop">Online Shop</a></li><li><a href="https://id.shp.ee/9wC21tmX" target="_blank" rel="noopener">Shopee</a></li><li><a href="https://vt.tiktok.com/ZSVDL1NkM/?page=Mall" target="_blank" rel="noopener">TikTok Shop</a></li><li><a href="https://wa.me/6285147465734" target="_blank" rel="noopener">WhatsApp</a></li></ul></div>
+    <div><h4>Kontak</h4><ul><li><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></li></ul></div>
+  </div>
+  <div class="footer-bottom"><span>&copy; 2026 CAVA PERFUME. Semua hak dilindungi.</span><span>Scent of Character</span></div>
+</footer>
+
+<script is:inline>
+const nav=document.getElementById('nav');
+addEventListener('scroll',()=>{nav.classList.toggle('scrolled',scrollY>40)},{passive:true});
+const burger=document.getElementById('burger');
+burger.addEventListener('click',()=>{
+  const open=document.body.classList.toggle('menu-open');
+  burger.setAttribute('aria-expanded',open);
+  burger.setAttribute('aria-label',open?'Tutup menu':'Buka menu');
+});
+document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>document.body.classList.remove('menu-open')));
+addEventListener('keydown',e=>{if(e.key==='Escape')document.body.classList.remove('menu-open')});
+
+const io=new IntersectionObserver((es)=>{es.forEach(e=>{if(e.isIntersecting){
+  const el=e.target;const d=el.dataset.delay||0;setTimeout(()=>el.classList.add('in'),d);io.unobserve(el);}})},{threshold:.16});
+document.querySelectorAll('.reveal,.mask,.img-reveal').forEach(el=>io.observe(el));
+
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+const px=reduce?[]:[...document.querySelectorAll('[data-par]')];
+let ticking=false;
+function par(){px.forEach(el=>{const r=el.getBoundingClientRect();
+  const p=(r.top+r.height/2-innerHeight/2)/innerHeight;
+  el.style.transform='translate3d(0,'+(p*parseFloat(el.dataset.par)).toFixed(2)+'px,0)';});ticking=false;}
+addEventListener('scroll',()=>{if(!ticking){ticking=true;requestAnimationFrame(par)}},{passive:true});par();
+
+if(matchMedia('(min-width:821px)').matches&&!matchMedia('(prefers-reduced-motion:reduce)').matches){
+  let target=scrollY,cur=scrollY,run=false;
+  addEventListener('wheel',e=>{
+    if(document.body.classList.contains('menu-open')||document.querySelector('.modal.open'))return;
+    e.preventDefault();
+    target=Math.max(0,Math.min(document.body.scrollHeight-innerHeight,target+e.deltaY));
+    if(!run){run=true;requestAnimationFrame(loop)}
+  },{passive:false});
+  function loop(){cur+=(target-cur)*.09;if(Math.abs(target-cur)<.5){cur=target;run=false}
+    scrollTo(0,cur);if(run)requestAnimationFrame(loop)}
+  addEventListener('scrollend',()=>{if(!run){target=cur=scrollY}});
+}
+
+const curEl=document.querySelector('.cursor');
+if(curEl&&matchMedia('(hover:hover)').matches){
+  addEventListener('mousemove',e=>{curEl.style.left=e.clientX+'px';curEl.style.top=e.clientY+'px'});
+  document.querySelectorAll('[data-cursor]').forEach(el=>{
+    el.addEventListener('mouseenter',()=>{curEl.textContent=el.dataset.cursor;curEl.classList.add('show')});
+    el.addEventListener('mouseleave',()=>curEl.classList.remove('show'));
+  });
+}
+
+// Modal
+const modal=document.getElementById('modal');
+function openModal(el){
+  document.getElementById('mName').textContent=el.dataset.name;
+  document.getElementById('mDesc').textContent=el.dataset.desc;
+  document.getElementById('mTop').innerHTML=el.dataset.top.split('|').join('<br>');
+  document.getElementById('mHeart').innerHTML=el.dataset.heart.split('|').join('<br>');
+  document.getElementById('mBase').innerHTML=el.dataset.base.split('|').join('<br>');
+  const im=document.getElementById('mImg');im.src=el.dataset.img;im.alt=el.dataset.name;
+  modal.classList.add('open');modal.setAttribute('aria-hidden','false');
+}
+function closeModal(){modal.classList.remove('open');modal.setAttribute('aria-hidden','true');}
+document.querySelectorAll('.card').forEach(c=>{
+  c.addEventListener('click',()=>openModal(c));
+  c.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();openModal(c)}});
+});
+document.getElementById('modalClose').addEventListener('click',closeModal);
+modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});
+addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+
+// Testimonial Slider
+(function(){
+  const track=document.getElementById('testiTrack');
+  if(!track)return;
+  const dots=[...document.querySelectorAll('.testi-dot')];
+  const total=dots.length;
+  let cur=0,autoTimer;
+  function go(n){
+    cur=(n+total)%total;
+    track.style.transform='translateX(-'+cur*100+'%)';
+    dots.forEach((d,i)=>d.classList.toggle('active',i===cur));
+  }
+  document.getElementById('testPrev').addEventListener('click',()=>{clearInterval(autoTimer);go(cur-1);startAuto();});
+  document.getElementById('testiNext').addEventListener('click',()=>{clearInterval(autoTimer);go(cur+1);startAuto();});
+  dots.forEach(d=>d.addEventListener('click',()=>{clearInterval(autoTimer);go(+d.dataset.idx);startAuto();}));
+  function startAuto(){autoTimer=setInterval(()=>go(cur+1),5000);}
+  startAuto();
+  let sx=0;
+  track.addEventListener('touchstart',e=>{sx=e.touches[0].clientX;},{passive:true});
+  track.addEventListener('touchend',e=>{
+    const dx=sx-e.changedTouches[0].clientX;
+    if(Math.abs(dx)>40){clearInterval(autoTimer);go(dx>0?cur+1:cur-1);startAuto();}
+  },{passive:true});
+})();
+</script>
+</BaseLayout>

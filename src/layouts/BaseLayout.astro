@@ -176,6 +176,11 @@ p{margin:0}
 .note ul{list-style:none;margin:1.5rem 0 0;padding:0;font-family:var(--serif);
  font-size:clamp(1.5rem,3vw,2.4rem);line-height:1.35;text-transform:uppercase;letter-spacing:.02em}
 
+.social-row{display:flex;align-items:center;gap:1rem;flex-wrap:wrap;margin-top:2rem}
+.social-link{display:inline-flex;align-items:center;justify-content:center;width:44px;height:44px;border:1px solid rgba(255,255,255,.25);background:rgba(255,255,255,.02);color:var(--white);transition:transform .35s var(--ease),border-color .35s var(--ease),background .35s var(--ease)}
+.social-link:hover{transform:translateY(-3px);border-color:rgba(255,255,255,.6);background:rgba(255,255,255,.06)}
+.social-link svg{width:18px;height:18px;display:block}
+
 /* ── PRODUCT CARDS ────────────────────────────────────────── */
 .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(1.5rem,3vw,2.5rem)}
 .cards-4{grid-template-columns:repeat(4,1fr)}

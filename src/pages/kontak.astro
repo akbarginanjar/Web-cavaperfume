@@ -2,12 +2,12 @@
 import BaseLayout from '../layouts/BaseLayout.astro';
 
 const title = "Kontak — CAVA PERFUME";
-const description = "Contact CAVA PERFUME for questions, collaborations, or fragrance discovery. hello@cavaperfume.com";
+const description = "Kontak CAVA PERFUME melalui email atau sosial media. cavaparfume.bandung@gmail.com";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "CAVA PERFUME",
-  "description": "Contact CAVA PERFUME for questions, collaborations, or fragrance discovery. hello@cavaperfume.com",
+  "description": "Kontak CAVA PERFUME melalui email atau sosial media. cavaparfume.bandung@gmail.com",
   "isPartOf": {
     "@type": "WebSite",
     "name": "CAVA PERFUME",
@@ -47,42 +47,47 @@ const jsonLd = {
     <li><a href="/katalog">Katalog</a></li>
     <li><a href="/kontak">Kontak</a></li>
   </ol>
-  <div class="menu-foot">hello@cavaperfume.com</div>
+  <div class="menu-foot">cavaparfume.bandung@gmail.com</div>
 </div>
 
 <main id="main" tabindex="-1"><section class="page-hero">
   <img decoding="async" loading="eager" class="bg" src="/images/cava-editorial-02.jpg" alt="" data-par="-40" fetchpriority="high">
   <div class="inner">
     <p class="eyebrow">Kontak</p>
-    <h1 class="disp mask in" style="margin-top:1.5rem"><span>Let's</span></h1>
-    <h1 class="disp mask in"><span>Connect.</span></h1>
-    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Have a question, collaboration idea, or simply want to discover CAVA? We would love to hear from you.</p>
+    <h1 class="disp mask in" style="margin-top:1.5rem"><span>Hubungi</span></h1>
+    <h1 class="disp mask in"><span>CAVA.</span></h1>
+    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Temukan CAVA di Bandung dan ikuti momen wangi kami lewat media sosial atau email langsung.</p>
   </div>
 </section>
 
 <section class="section wrap">
-  <div class="grid" style="grid-template-columns:1fr 1.2fr">
-    <div class="reveal">
-      <h2 class="disp-sm">CAVA<br>Perfume</h2>
-      <p class="lede" style="margin-top:2rem"><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></p>
+  <div class="contact-grid">
+    <div class="reveal contact-panel">
+      <p class="eyebrow">Email</p>
+      <h2 class="disp-sm" style="margin-top:1rem">CAVA<br>Perfume</h2>
+      <p class="lede" style="margin-top:2rem"><a href="mailto:cavaparfume.bandung@gmail.com">cavaparfume.bandung@gmail.com</a></p>
       <hr class="rule" style="margin:2.5rem 0">
-      <ul style="list-style:none;padding:0;margin:0;font-size:13px;line-height:2.4">
-        <li><a class="btn btn-ghost" href="#">Instagram <span class="arw">&rarr;</span></a></li>
-        <li><a class="btn btn-ghost" href="#">TikTok <span class="arw">&rarr;</span></a></li>
-        <li><a class="btn btn-ghost" href="#">WhatsApp <span class="arw">&rarr;</span></a></li>
-      </ul>
+      <div class="social-stack" aria-label="Sosial media CAVA">
+        <a class="btn btn-ghost" href="https://www.instagram.com/cavaparfume" target="_blank" rel="noopener noreferrer">Instagram <span class="arw">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://www.tiktok.com/@cavaparfume?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer">TikTok <span class="arw">&rarr;</span></a>
+        <a class="btn btn-ghost" href="https://wa.me/6285147465734" target="_blank" rel="noopener noreferrer">WhatsApp <span class="arw">&rarr;</span></a>
+      </div>
     </div>
-    <form class="reveal" id="contactForm" novalidate>
-      <div class="field"><label for="nama">Nama</label><input id="nama" name="nama" type="text" required></div>
-      <div class="field"><label for="email">Email</label><input id="email" name="email" type="email" required></div>
-      <div class="field"><label for="subjek">Subjek</label><input id="subjek" name="subjek" type="text"></div>
-      <div class="field"><label for="pesan">Pesan</label><textarea id="pesan" name="pesan" required></textarea></div>
-      <button class="btn btn-dark" type="submit">Send message <span class="arw">&rarr;</span></button>
-      <p class="meta" id="formNote" role="status" style="margin-top:1.5rem"></p>
-    </form>
+
+    <div class="reveal map-panel" aria-label="Lokasi CAVA di Bandung">
+      <div class="map-card">
+        <iframe
+          src="https://www.google.com/maps?q=Bandung%20Indonesia&z=12&output=embed"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          allowfullscreen
+          title="Peta lokasi CAVA di Bandung">
+        </iframe>
+      </div>
+      <p class="map-label">Bandung, Indonesia</p>
+    </div>
   </div>
 </section>
-
 
 </main>
 <footer class="footer">
@@ -92,11 +97,25 @@ const jsonLd = {
       <p class="lede" style="margin-top:1.5rem">Modern fragrance.<br>Timeless presence.</p>
     </div>
     <div><h4>Navigasi</h4><ul><li><a href="/">Beranda</a></li><li><a href="/varian-aroma">Varian Aroma</a></li><li><a href="/katalog">Katalog</a></li><li><a href="/kontak">Kontak</a></li></ul></div>
-    <div><h4>Social</h4><ul><li><a href="#" aria-label="CAVA PERFUME di Instagram">Instagram</a></li><li><a href="#" aria-label="CAVA PERFUME di TikTok">TikTok</a></li><li><a href="#" aria-label="Hubungi CAVA PERFUME via WhatsApp">WhatsApp</a></li></ul></div>
-    <div><h4>Kontak</h4><ul><li><a href="mailto:hello@cavaperfume.com">hello@cavaperfume.com</a></li></ul></div>
+    <div><h4>Social</h4><ul><li><a href="https://www.instagram.com/cavaparfume" target="_blank" rel="noopener noreferrer" aria-label="CAVA PERFUME di Instagram">Instagram</a></li><li><a href="https://www.tiktok.com/@cavaparfume?is_from_webapp=1&sender_device=pc" target="_blank" rel="noopener noreferrer" aria-label="CAVA PERFUME di TikTok">TikTok</a></li><li><a href="https://wa.me/6285147465734" target="_blank" rel="noopener noreferrer" aria-label="Hubungi CAVA PERFUME via WhatsApp">WhatsApp</a></li></ul></div>
+    <div><h4>Kontak</h4><ul><li><a href="mailto:cavaparfume.bandung@gmail.com">cavaparfume.bandung@gmail.com</a></li></ul></div>
   </div>
   <div class="footer-bottom"><span>&copy; 2026 CAVA PERFUME. All rights reserved.</span><span>Scent of character</span></div>
 </footer>
+
+<style>
+.contact-grid{display:grid;grid-template-columns:1fr 1.2fr;gap:clamp(2rem,5vw,5rem);align-items:center}
+.contact-panel,.map-panel{display:flex;flex-direction:column}
+.social-stack{display:flex;flex-direction:column;align-items:flex-start;gap:1rem;margin-top:1rem}
+.map-card{position:relative;overflow:hidden;border:1px solid var(--light-gray);background:var(--white);min-height:480px;box-shadow:0 20px 60px rgba(5,5,5,.08)}
+.map-card iframe{display:block;width:100%;height:100%;min-height:480px;border:0}
+.map-label{margin-top:1rem;font-size:11px;letter-spacing:.28em;text-transform:uppercase;color:var(--gray)}
+
+@media (max-width: 820px){
+  .contact-grid{grid-template-columns:1fr}
+  .map-card,.map-card iframe{min-height:360px}
+}
+</style>
 
 <script is:inline>
 /* respects prefers-reduced-motion: skips parallax + heavy effects */
@@ -149,11 +168,5 @@ if(cur&&matchMedia('(hover:hover)').matches){
   });
 }
 
-const form=document.getElementById('contactForm');
-form.addEventListener('submit',e=>{e.preventDefault();
-  const note=document.getElementById('formNote');
-  if(!form.nama.value.trim()||!form.email.value.trim()||!form.pesan.value.trim()){
-    note.textContent='Mohon lengkapi nama, email, dan pesan.';return;}
-  note.textContent='Terima kasih. Pesan Anda telah kami terima.';form.reset();});
 </script>
 </BaseLayout>

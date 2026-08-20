@@ -1,13 +1,13 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
 
-const title = "Katalog — CAVA PERFUME Collection";
-const description = "Discover the complete CAVA PERFUME collection of eau de parfum, from CAVA NO.01 to NO.06.";
+const title = "Katalog — Koleksi CAVA PERFUME";
+const description = "Temukan seluruh koleksi eau de parfum CAVA PERFUME, dari CAVA NO.01 hingga NO.06.";
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "CAVA PERFUME",
-  "description": "Discover the complete CAVA PERFUME collection of eau de parfum, from CAVA NO.01 to NO.06.",
+  "description": "Temukan seluruh koleksi eau de parfum CAVA PERFUME, dari CAVA NO.01 hingga NO.06.",
   "isPartOf": {
     "@type": "WebSite",
     "name": "CAVA PERFUME",
@@ -54,58 +54,58 @@ const jsonLd = {
   <img decoding="async" loading="eager" class="bg" src="/media/cava-duo.jpg" alt="" data-par="-40" fetchpriority="high">
   <div class="inner">
     <p class="eyebrow">Katalog</p>
-    <h1 class="disp mask in" style="margin-top:1.5rem"><span>The Collection</span></h1>
-    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Discover the complete CAVA PERFUME collection.</p>
+    <h1 class="disp mask in" style="margin-top:1.5rem"><span>Koleksi</span></h1>
+    <p class="lede" style="margin-top:2rem;color:rgba(255,255,255,.75)">Temukan seluruh koleksi CAVA PERFUME.</p>
   </div>
 </section>
 
 <section class="section wrap" id="scent-finder" style="padding-bottom:0">
-  <p class="eyebrow">Scent finder</p>
-  <h2 class="disp-sm reveal" style="margin:1.25rem 0 2.5rem">Find your CAVA</h2>
+  <p class="eyebrow">Pencari aroma</p>
+  <h2 class="disp-sm reveal" style="margin:1.25rem 0 2.5rem">Temukan CAVA Anda</h2>
   <div class="quiz reveal" id="quiz">
     <div class="quiz-head">
-      <p class="eyebrow" id="qStep">Question 01 / 04</p>
-      <p class="eyebrow">Approx. 30 seconds</p>
+      <p class="eyebrow" id="qStep">Pertanyaan 01 / 04</p>
+      <p class="eyebrow">Sekitar 30 detik</p>
     </div>
     <div class="quiz-bar"><i id="qBar"></i></div>
 
     <div class="step active" data-step="0">
-      <h3 class="q">When do you wear it?</h3>
+      <h3 class="q">Kapan Anda memakainya?</h3>
       <div class="opts">
-        <button class="opt" type="button" data-w="fresh:2,musk:1" aria-label="Daylight — Morning dan office"><span>Daylight</span>Morning &amp; office</button>
-        <button class="opt" type="button" data-w="floral:2,musk:1" aria-label="Afternoon — Lunch dan city walks"><span>Afternoon</span>Lunch &amp; city walks</button>
-        <button class="opt" type="button" data-w="oriental:2,woody:1" aria-label="Evening — Dinner dan events"><span>Evening</span>Dinner &amp; events</button>
-        <button class="opt" type="button" data-w="woody:2,oriental:1" aria-label="After dark — Late, quiet hours"><span>After dark</span>Late, quiet hours</button>
+        <button class="opt" type="button" data-w="fresh:2,musk:1" aria-label="Siang hari — Pagi dan kantor"><span>Siang hari</span>Pagi &amp; kerja</button>
+        <button class="opt" type="button" data-w="floral:2,musk:1" aria-label="Sore — Makan siang dan jalan kota"><span>Sore</span>Siang &amp; jalan kota</button>
+        <button class="opt" type="button" data-w="oriental:2,woody:1" aria-label="Pagi malam — Makan malam dan acara"><span>Pagi malam</span>Makan malam &amp; acara</button>
+        <button class="opt" type="button" data-w="woody:2,oriental:1" aria-label="Setelah gelap — Saat larut malam dan tenang"><span>Setelah gelap</span>Larut malam &amp; tenang</button>
       </div>
     </div>
 
     <div class="step" data-step="1">
-      <h3 class="q">Choose a texture.</h3>
+      <h3 class="q">Pilih teksturnya.</h3>
       <div class="opts">
-        <button class="opt" type="button" data-w="fresh:2" aria-label="Sea salt — Cool, airy, clean"><span>Sea salt</span>Cool, airy, clean</button>
-        <button class="opt" type="button" data-w="floral:2" aria-label="Silk petals — Soft and luminous"><span>Silk petals</span>Soft and luminous</button>
-        <button class="opt" type="button" data-w="woody:2" aria-label="Dry cedar — Smoke and stone"><span>Dry cedar</span>Smoke and stone</button>
-        <button class="opt" type="button" data-w="oriental:2" aria-label="Warm resin — Amber and spice"><span>Warm resin</span>Amber and spice</button>
+        <button class="opt" type="button" data-w="fresh:2" aria-label="Garam laut — Segar, ringan, bersih"><span>Garam laut</span>Segar, ringan, bersih</button>
+        <button class="opt" type="button" data-w="floral:2" aria-label="Kelopak sutra — Lembut dan bercahaya"><span>Kelopak sutra</span>Lembut dan bercahaya</button>
+        <button class="opt" type="button" data-w="woody:2" aria-label="Kayu kering — Asap dan batu"><span>Kayu kering</span>Asap dan batu</button>
+        <button class="opt" type="button" data-w="oriental:2" aria-label="Resin hangat — Amber dan rempah"><span>Resin hangat</span>Amber dan rempah</button>
       </div>
     </div>
 
     <div class="step" data-step="2">
-      <h3 class="q">How loud is your sillage?</h3>
+      <h3 class="q">Seberapa keras sillage-nya?</h3>
       <div class="opts">
-        <button class="opt" type="button" data-w="musk:2,fresh:1" aria-label="Whisper — Skin-close, intimate"><span>Whisper</span>Skin-close, intimate</button>
-        <button class="opt" type="button" data-w="floral:1,fresh:1" aria-label="Quiet — Noticed up close"><span>Quiet</span>Noticed up close</button>
-        <button class="opt" type="button" data-w="woody:1,oriental:1" aria-label="Present — Fills a room slowly"><span>Present</span>Fills a room slowly</button>
-        <button class="opt" type="button" data-w="oriental:2" aria-label="Statement — Unmistakable trail"><span>Statement</span>Unmistakable trail</button>
+        <button class="opt" type="button" data-w="musk:2,fresh:1" aria-label="Bisikan — Dekat kulit, intim"><span>Bisikan</span>Dekat kulit, intim</button>
+        <button class="opt" type="button" data-w="floral:1,fresh:1" aria-label="Tenang — Terlihat dari dekat"><span>Tenang</span>Terlihat dari dekat</button>
+        <button class="opt" type="button" data-w="woody:1,oriental:1" aria-label="Muncul — Mengisi ruangan perlahan"><span>Muncul</span>Mengisi ruangan perlahan</button>
+        <button class="opt" type="button" data-w="oriental:2" aria-label="Pernyataan — Jejak yang tak terlupakan"><span>Pernyataan</span>Jejak yang tak terlupakan</button>
       </div>
     </div>
 
     <div class="step" data-step="3">
-      <h3 class="q">Pick a mood.</h3>
+      <h3 class="q">Pilih suasana hati.</h3>
       <div class="opts">
-        <button class="opt" type="button" data-w="fresh:2" aria-label="Effortless — Light and unbothered"><span>Effortless</span>Light and unbothered</button>
-        <button class="opt" type="button" data-w="floral:2,musk:1" aria-label="Elegant — Refined and calm"><span>Elegant</span>Refined and calm</button>
-        <button class="opt" type="button" data-w="woody:2" aria-label="Grounded — Steady and composed"><span>Grounded</span>Steady and composed</button>
-        <button class="opt" type="button" data-w="oriental:2,musk:1" aria-label="Magnetic — Warm and close"><span>Magnetic</span>Warm and close</button>
+        <button class="opt" type="button" data-w="fresh:2" aria-label="Ringan — Tenang dan tak terbebani"><span>Ringan</span>Tenang dan tak terbebani</button>
+        <button class="opt" type="button" data-w="floral:2,musk:1" aria-label="Elegan — Halus dan tenang"><span>Elegan</span>Halus dan tenang</button>
+        <button class="opt" type="button" data-w="woody:2" aria-label="Kokoh — Stabil dan tenang"><span>Kokoh</span>Stabil dan tenang</button>
+        <button class="opt" type="button" data-w="oriental:2,musk:1" aria-label="Magnetik — Hangat dan dekat"><span>Magnetik</span>Hangat dan dekat</button>
       </div>
     </div>
 
@@ -113,22 +113,22 @@ const jsonLd = {
       <div class="result" style="margin-top:2.5rem">
         <div class="rimg"><img decoding="async" loading="lazy" id="rImg" src="/images/cava-bottle-01.jpg" alt=""></div>
         <div>
-          <span class="badge" id="rFamily">Your match</span>
+          <span class="badge" id="rFamily">Cocok untuk Anda</span>
           <h3 class="disp-sm" id="rName" style="margin:.5rem 0 1.25rem">CAVA NO.01</h3>
           <p class="lede" id="rDesc"></p>
           <hr class="rule" style="margin:2rem 0">
           <p class="meta" id="rNotes" style="margin:0"></p>
           <div class="quiz-nav">
-            <button class="btn btn-dark" id="rView" type="button">View details <span class="arw">&rarr;</span></button>
-            <button class="btn btn-ghost" id="rAgain" type="button">Start over</button>
+            <button class="btn btn-dark" id="rView" type="button">Lihat detail <span class="arw">&rarr;</span></button>
+            <button class="btn btn-ghost" id="rAgain" type="button">Mulai ulang</button>
           </div>
         </div>
       </div>
     </div>
 
     <div class="quiz-nav" id="qNav">
-      <button class="btn btn-ghost" id="qBack" type="button" hidden>&larr; Back</button>
-      <p class="eyebrow" id="qHint">Select an option to continue</p>
+      <button class="btn btn-ghost" id="qBack" type="button" hidden>&larr; Kembali</button>
+      <p class="eyebrow" id="qHint">Pilih salah satu opsi untuk melanjutkan</p>
     </div>
   </div>
 </section>
@@ -143,7 +143,7 @@ const jsonLd = {
     <h3>CAVA NO.01</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Bergamot, iris, dan amber dalam komposisi yang tenang namun berkarakter.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
 <article class="card reveal" data-delay="90" data-cursor="VIEW" tabindex="0" role="button"
@@ -153,7 +153,7 @@ const jsonLd = {
     <h3>CAVA NO.02</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Kesegaran aquatic yang bersih dengan jejak kayu yang hangat.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
 <article class="card reveal" data-delay="180" data-cursor="VIEW" tabindex="0" role="button"
@@ -163,7 +163,7 @@ const jsonLd = {
     <h3>CAVA NO.03</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Oriental lembut dengan vanila, tonka, dan resin yang dalam.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
 <article class="card reveal" data-delay="270" data-cursor="VIEW" tabindex="0" role="button"
@@ -173,7 +173,7 @@ const jsonLd = {
     <h3>CAVA NO.04</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Floral putih yang halus, elegan, dan terasa dekat di kulit.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
 <article class="card reveal" data-delay="360" data-cursor="VIEW" tabindex="0" role="button"
@@ -183,7 +183,7 @@ const jsonLd = {
     <h3>CAVA NO.05</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Kayu kering dan asap tipis untuk kehadiran yang tenang.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
 <article class="card reveal" data-delay="450" data-cursor="VIEW" tabindex="0" role="button"
@@ -193,14 +193,14 @@ const jsonLd = {
     <h3>CAVA NO.06</h3>
     <p class="meta">Eau de Parfum &nbsp;/&nbsp; 50 ML</p>
     <p class="lede" style="margin-top:1rem">Musk bersih dengan sentuhan almond dan kulit yang lembut.</p>
-    <span class="btn btn-ghost" style="margin-top:1.6rem">View details <span class="arw">&rarr;</span></span>
+    <span class="btn btn-ghost" style="margin-top:1.6rem">Lihat detail <span class="arw">&rarr;</span></span>
   </div>
 </article>
   </div>
 </section>
 
 <div class="modal" id="modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Detail produk">
-  <button class="modal-close" id="modalClose" aria-label="Tutup detail">CLOSE &times;</button>
+  <button class="modal-close" id="modalClose" aria-label="Tutup detail">TUTUP &times;</button>
   <div class="modal-inner">
     <img decoding="async" loading="lazy" id="mImg" src="/images/cava-bottle-01.jpg" alt="">
     <div class="modal-content">
@@ -209,9 +209,9 @@ const jsonLd = {
       <p class="lede" id="mDesc"></p>
       <hr class="rule" style="margin:2.5rem 0">
       <div class="grid" style="grid-template-columns:1fr 1fr;gap:2rem">
-        <div><p class="eyebrow">Top notes</p><p id="mTop" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
-        <div><p class="eyebrow">Heart notes</p><p id="mHeart" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
-        <div><p class="eyebrow">Base notes</p><p id="mBase" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Catatan atas</p><p id="mTop" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Catatan tengah</p><p id="mHeart" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
+        <div><p class="eyebrow">Catatan dasar</p><p id="mBase" style="font-family:var(--serif);font-size:1.4rem;line-height:1.5"></p></div>
         <div><p class="eyebrow">Volume</p><p style="font-family:var(--serif);font-size:1.4rem">50 ML</p></div>
       </div>
     </div>
@@ -311,13 +311,13 @@ addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
   const back=document.getElementById('qBack');
   const total=steps.length-1;
   const map={fresh:'CAVA NO.02',floral:'CAVA NO.04',woody:'CAVA NO.05',oriental:'CAVA NO.03',musk:'CAVA NO.06'};
-  const famLabel={fresh:'Fresh / Aquatic',floral:'Floral',woody:'Woody',oriental:'Oriental',musk:'Musk'};
+  const famLabel={fresh:'Segar / Aquatic',floral:'Floral',woody:'Kayu',oriental:'Oriental',musk:'Musk'};
   let i=0,picks=[];
   function show(n){
     i=n;steps.forEach((s,k)=>s.classList.toggle('active',k===n));
     const done=n>=total;
     bar.style.width=(done?100:(n/total)*100)+'%';
-    lbl.textContent=done?'Your match':'Question 0'+(n+1)+' / 0'+total;
+    lbl.textContent=done?'Cocok untuk Anda':'Pertanyaan 0'+(n+1)+' / 0'+total;
     back.hidden=n===0||done;hint.hidden=done;
   }
   function score(){
@@ -335,7 +335,7 @@ addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
       document.getElementById('rImg').alt=name;
       document.getElementById('rName').textContent=name;
       document.getElementById('rDesc').textContent=card.dataset.desc;
-      document.getElementById('rNotes').innerHTML='Notes &nbsp;/&nbsp; '+[card.dataset.top,card.dataset.heart,card.dataset.base].join('|').split('|').join(', ');
+      document.getElementById('rNotes').innerHTML='Catatan &nbsp;/&nbsp; '+[card.dataset.top,card.dataset.heart,card.dataset.base].join('|').split('|').join(', ');
       document.getElementById('rView').onclick=()=>{
         card.scrollIntoView({behavior:'smooth',block:'center'});
         setTimeout(()=>openModal(card),600);
